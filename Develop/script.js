@@ -8,6 +8,8 @@ $("currentDay")
 
 
 // input for time slot
+
+
 // containers/ rows with text area for each hoir of the day
 $()
 
