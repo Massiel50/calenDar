@@ -1,5 +1,12 @@
 // 3 things
 
+// display time and date 
+$("currentDay")
+.text(moment()
+.format('MMMM Do YYYY, h:mm:ss a'));
+
+
+
 // input for time slot
 // containers/ rows with text area for each hoir of the day
 $()
@@ -17,7 +24,7 @@ $(".saveBtn").on("click", function(event){
 })
 
 
-$("currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+
 
 // get hour from current time usig moemnt and compare to rows
 
