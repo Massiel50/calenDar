@@ -1,7 +1,11 @@
 // 3 things
 
 // display time and date
-$("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+// $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+function update() {
+  $('#currentDay').html(moment().format("MMMM Do YYYY, h:mm:ss a"));
+}
+setInterval(update, 1000);
 
 // input for time slot
 // containers/ rows with text area for each hour of the day
@@ -24,7 +28,7 @@ function renderLastUse() {
 }
 
 
-// click save button to save textInput to local storage 
+// click save button to set textInput to local storage 
 $(".saveBtn").on("click", function(event) {
   event.preventDefault();
 
@@ -39,3 +43,7 @@ $(".saveBtn").on("click", function(event) {
 
 // get hour from current time usig moemnt and compare to rows
 // compare present time for color coded pas present and future
+
+// playing with moment moethod to refresh page
+
+

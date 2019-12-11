@@ -11,7 +11,7 @@ body {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  width: 300px;
+  width: 480px;
   height: 66px;
   float: left;
 }
@@ -29,12 +29,12 @@ body {
 }
 
 .time-block{
-  width: 600px;
+  width: 800px;
   height: 50px;
   text-align: center;
   border-radius: 15px;
   background-color: slategray;
-
+margin-left: 100px;
 }
 
 .row {
