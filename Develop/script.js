@@ -6,21 +6,36 @@ $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 // input for time slot
 // containers/ rows with text area for each hour of the day
 
+// get local storage when page is refreshed with function
+renderLastUse();
 
-
+function renderLastUse() {
+    var textInput = localStorage.getItem("textInput");
+    console.log(textInput);
+    // If they are null, return early from this function
+    if(textInput === null){
+      return;
+    }
+    // Else set the text of the textarea
+    else{
+      $("#textarea").val(textInput)
+     console.log(textInput)
+    }
+}
 
 
 // click save button to save textInput to local storage 
 $(".saveBtn").on("click", function(event) {
   event.preventDefault();
+
   //  save button saves input to local storage
   var textInput = $("#textarea").val().trim();
   // set to local storage
-  localStorage.setItem(".hour", textInput);
+  localStorage.setItem("textInput", textInput);
+
+  renderLastUse();
 });
-// get local storage when page is refreshed
+
 
 // get hour from current time usig moemnt and compare to rows
 // compare present time for color coded pas present and future
-
-
