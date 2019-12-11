@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-#textarea{
+.data{
   background: transparent;
   border: none;
   resize: none;
@@ -33,7 +33,7 @@ body {
   height: 50px;
   text-align: center;
   border-radius: 15px;
-  background-color: slategray;
+  background-color: red;
 margin-left: 100px;
 }
 
