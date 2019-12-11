@@ -17,33 +17,62 @@ function renderLastUse() {
     var textInput = localStorage.getItem("textInput");
     console.log(textInput);
     // If they are null, return early from this function
-    if(textInput === null){
-      return;
-    }
-    // Else set the text of the textarea
-    else{
-      $("#textarea").val(textInput)
-     console.log(textInput)
-    }
-}
+    var str = localStorage.getItem("text9");
+    if (str !== null) $('#9').val(str);
+    var str = localStorage.getItem("text10");
+    if (str !== null) $('#10').val(str);
+    var str = localStorage.getItem("text11");
+    if (str !== null) $('#11').val(str);
+    var str = localStorage.getItem("text12");
+    if (str !== null) $('#12').val(str);
+    var str = localStorage.getItem("text1");
+    if (str !== null) $('#1').val(str);
+    var str = localStorage.getItem("text2");
+    if (str !== null) $('#2').val(str);
+    var str = localStorage.getItem("text3");
+    if (str !== null) $('#3').val(str);
+    var str = localStorage.getItem("text4");
+    if (str !== null) $('#4').val(str);
+    var str = localStorage.getItem("text5");
+    if (str !== null) $('#5').val(str);
 
+    // if(textInput === null){
+    //   return;
+    // }
+    // // Else set the text of the textarea
+    // else{
+    //   $("#textarea").val(textInput)
+    //  console.log(textInput)
+    // }
+}
 
 // click save button to set textInput to local storage 
 $(".saveBtn").on("click", function(event) {
   event.preventDefault();
 
   //  save button saves input to local storage
-  var textInput = $("#textarea").val().trim();
-  // set to local storage
-  localStorage.setItem("textInput", textInput);
+  // var textInput = $("#textarea").val().trim();
+  // // set to local storage
+  // localStorage.setItem("textInput", textInput);
+
+  localStorage.setItem("text9", $('#9').val());
+  localStorage.setItem("text10", $('#10').val());
+  localStorage.setItem("text11", $('#11').val());
+  localStorage.setItem("text12", $('#12').val());
+  localStorage.setItem("text1", $('#1').val());
+  localStorage.setItem("text2", $('#2').val());
+  localStorage.setItem("text3", $('#3').val());
+  localStorage.setItem("text4", $('#4').val());
+  localStorage.setItem("text5", $('#5').val());
 
   renderLastUse();
 });
 
 
-// get hour from current time usig moemnt and compare to rows
+// get hour from current time using moment and compare to rows
+
+
 // compare present time for color coded pas present and future
 
-// playing with moment moethod to refresh page
 
 

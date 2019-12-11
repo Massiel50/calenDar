@@ -71,10 +71,9 @@ margin-left: 100px;
   color: white;
   height: 67px;
   width: 70px;
- 
 }
 
 .saveBtn i:hover {
-  font-size: 30px;
+  font-size: 40px;
   transition: all .3s ease-in-out;
 }
