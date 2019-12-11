@@ -3,15 +3,12 @@
 // display time and date 
 $("#currentDay").text(moment().format('MMMM Do YYYY'));
 
-
 // input for time slot
-
 
 // containers/ rows with text area for each hour of the day
 
-
 //  save button saves input to local storage
-
+var textInput = $("#textarea").val().trim();
 // get local storage when page is refreshed
 
 // compare present time for color coded pas present and future
